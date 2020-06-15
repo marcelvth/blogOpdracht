@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}home{% endblock %}
 
 {% block body %}
     <section id="blog">
@@ -14,12 +14,12 @@
                                      alt="{{ post.title }}">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ post.title }}</h5>
-                                    <p class="card-text">{{ post.body|raw }}</p> {#|truncate(250, true, "read_more_link")#}
+                                    <p class="card-text">{{ post.body|raw }}</p>
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-muted"><a href="/viewpost/{{ post.id }}" class="btn btn-primary">Meer
-                                            lezen</a> {% if app.user %}<a
-                                            href="{{ path('blog_edit', {'id': post.id}) }}"><i
+                                    <small class="text-muted"><a href="/viewpost/{{ post.id }}" class="btn btn-primary">lees meer
+                                            </a> {% if app.user %}<a
+                                            href="{{ path('post_edit', {'id': post.id}) }}"><i
                                                         class="fas fa-pen text-black-50"></i>
                                             </a>{% endif %}</small>
                                 </div>
