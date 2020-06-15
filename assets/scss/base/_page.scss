@@ -8,7 +8,6 @@ body {
   position: relative;
   height: 100%;
   background-color: $white;
-  font-family: din2014;
   display: flex;
   flex-direction: column;
 }
@@ -21,48 +20,4 @@ html {
 }
 .logo {
   height: 70px;
-}
-.edit-pen {
-  height: 20px;
-}
-
-.title {
-  color: $white;
-
-}
-section {
-}
-
-.text_title {
-  margin-bottom: 35px;
-  color: $primary;
-  font-size: 48px;
-}
-.svg {
-  width: 100%;
-  max-width: 400px;
-}
-
-#overgouda {
-  background-color: $bgColor;
-}
-.overGouda-cols {
-  padding-right: 70px;
-}
-//a {
-//  background-color: white;
-//  color: $primary;
-//
-//  &:hover {
-//    background-color: darken($primary, 7.5%);
-//    color: $white;
-//  }
-//
-//}
-#media {
-  background-color: $primary;
-  color: $white;
-}
-#media h4 {
-  color: $white;
 }
