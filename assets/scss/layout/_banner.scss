@@ -1,0 +1,64 @@
+.banner {
+  height: calc(50vh + 91px);
+  background-image: url("/img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .header {
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64%;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px;
+
+    a {
+      background-color: white;
+      color: $primary;
+
+      &:hover {
+        background-color: darken($primary, 7.5%);
+        color: $white;
+      }
+
+    }
+
+
+    #logo {
+      background-image: url(/img/CG_Logo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 209px;
+      background-position: center;
+      height: 401px;
+      margin: auto;
+    }
+    a {
+      margin-top: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    height: 100vh;
+    .header {
+      position: absolute;
+      width: 266px;
+      height: 350px;
+      overflow: hidden;
+      top: 50%;
+      right: 6%;
+      transform: translate(0,-50%);
+
+      #logo {
+        width: 257px;
+      }
+    }
+  }
+}
